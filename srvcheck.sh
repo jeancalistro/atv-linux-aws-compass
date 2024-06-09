@@ -1,12 +1,14 @@
 output_path="./"
-date=$(date +'%d/%m/%Y %H:%M')
+timezone="America/Sao_Paulo"
 
-while getopts ":s:o:" options; do
+while getopts ":s:o:t:" options; do
   case ${options} in
     s)
       service=${OPTARG};;
     o)
       output_path=${OPTARG};;
+    t)
+      timezone=${OPTARG};;
     :)
       echo "Opção -${OPTARG} requer um argumento"
       exit 1;;
@@ -17,6 +19,7 @@ while getopts ":s:o:" options; do
 done
 
 isActive=$(systemctl is-active $service)
+date=$(TZ=${timezone} date +'%d/%m/%Y %H:%M')
 
 if [ "${isActive}" == "active" ]; then
   echo "${date} + ${service} + ${isActive} + Serviço está ONLINE" >> "${output_path}"/ONLINE.log
