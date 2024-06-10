@@ -28,7 +28,7 @@
 
 - Preparar a execução automatizada do script a cada 5 minutos;
 
-- Fazer a [documentação]("https://github.com/jeancalistro/atv-linux-aws-compass/blob/main/documenta%C3%A7%C3%A3o%20instala%C3%A7%C3%A3o%20fedora.pdf") explicando o processo de instalação do Linux
+- Fazer a [documentação](https://github.com/jeancalistro/atv-linux-aws-compass/blob/main/documenta%C3%A7%C3%A3o%20instala%C3%A7%C3%A3o%20fedora.pdf) explicando o processo de instalação do Linux
 
 ## Gerar chave de acesso
 
