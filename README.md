@@ -28,7 +28,7 @@
 
 - Preparar a execução automatizada do script a cada 5 minutos;
 
-- Fazer a [documentação]("") explicando o processo de instalação do Linux
+- Fazer a [documentação]("https://github.com/jeancalistro/atv-linux-aws-compass/blob/main/documenta%C3%A7%C3%A3o%20instala%C3%A7%C3%A3o%20fedora.pdf") explicando o processo de instalação do Linux
 
 ## Gerar chave de acesso
 
@@ -79,7 +79,7 @@ ssh-keygen -b 2048 -t rsa
 - Procure pelo EC2 feature **Security groups**
 - Selecione o **Security Group** associado a instância
 - Escolha a opção **Editar regras de entrada > Adicionar regra**
-- Para cada uma das seguinte portas, **22/TCP, 111/TCP, 2049/TCP, 80/TCP, 443/TCP**, adicione uma nova regra
+- Para cada uma das seguinte portas, **22/TCP, 111/TCP/UDP, 2049/TCP/UDP, 80/TCP, 443/TCP**, adicione uma nova regra
 
 ## Configurar NFS
 
