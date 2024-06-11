@@ -137,8 +137,11 @@ sudo yum install httpd
 
 ```bash
 sudo systemctl start httpd
+sudo systemctl enable httpd
 ```
 ## Script para verificação do serviço
+
+- [srvcheck](https://github.com/jeancalistro/atv-linux-aws-compass/blob/main/srvcheck.sh)
 
 ### Modo de uso
 
@@ -149,8 +152,6 @@ sudo systemctl start httpd
 ```bash
 ./srvcheck -s httpd -o /shared-dir/jean -t America/Sao_Paulo -a "Serviço Online" -i "Serviço Offline"
 ```
-
-- [srvcheck](https://github.com/jeancalistro/atv-linux-aws-compass/blob/main/srvcheck.sh)
 
 ## Execução automática do script a cada 5 minutos
 
